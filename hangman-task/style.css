@@ -1,0 +1,349 @@
+body {
+
+    font-family: 'Oxygen', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+
+}
+
+.hangman-overlay {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 40px;
+    margin: 0px;
+    padding: 60px;
+    
+
+
+}
+
+.hangman-picture-field{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hangman-tamplate{
+    position: relative;
+    top: 150px;
+    right: 111px;
+    width: 120px;
+}
+
+.hangman-head{
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    border: 10px solid grey;
+}
+
+.hangman-left-arm {
+    position: relative;
+    top: -75px;
+    left: 50px;
+    width: 100px;
+    height: 10px;
+    background-color: grey;
+    rotate: -140deg;
+}
+
+.hangman-body{
+    position: relative;
+    top: 0px;
+    left: 56px;
+    width: 10px;
+    height: 100px;
+    background-color: grey;
+
+}
+
+.hangman-right-arm{
+    position: relative;
+    top: -85px;
+    left: -28px;
+    width: 100px;
+    height: 10px;
+    background-color: grey;
+    rotate: 140deg;
+}
+
+.hangman-right-leg{
+    position: relative;
+    top: -3px;
+    left: -21px;
+    width: 99px;
+    height: 10px;
+    background-color: grey;
+    rotate: 130deg;
+}
+
+.hangman-left-leg{
+    position: relative;
+    top: 7px;
+    left: 44px;
+    width: 100px;
+    height: 10px;
+    background-color: grey;
+    rotate: -130deg;
+}
+
+.gallow-tamplate{
+
+    display: flex;
+   
+    border-bottom: 20px solid #000000;
+
+}
+
+
+.hangman-play-field{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    margin: 50px;
+}
+
+.letter-guess-block{
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+}
+
+.letter {
+    text-align: center;
+    width: 45px;
+    height: 55px;
+    font-size: 45px;
+    border-bottom: 5px solid rgb(88, 12, 88);
+}
+
+.hint-and-guess-block{
+    display: flex;
+    flex-direction: column;
+    gap: 10px
+    
+}
+
+.hint-text {
+    font-size: 32px;
+    max-width: 500px;
+}
+
+span{
+    font-weight: 600;
+}
+
+.incorrect-guesses-block{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+}
+
+p {
+    margin: 0;
+}
+
+.incorrect-text{
+    font-size: 25px;
+}
+
+.incorrect-counter{
+    font-size: 25px;
+    color: rgb(223, 25, 25);
+    font-weight: 600;
+    font-style: italic;
+}
+
+.virtual-keyboard{
+    display: flex;
+    flex-flow: row wrap;
+    gap: 9px;
+    justify-content: center;
+    max-width: 600px;
+}
+
+.key-btn{
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 10%;
+    font-size: 30px;
+    text-align: center;
+    color:rgb(248, 248, 218);
+    cursor: pointer;
+    background:rgb(88, 12, 88);
+    transition: all 0.3s ease-in-out;
+}
+
+.key-btn:hover{
+    background:rgb(163, 59, 163);
+    color:rgb(250, 250, 22);
+}
+
+.key-btn.active {
+    user-select: none;
+    cursor: auto;
+    background:rgb(163, 59, 163);
+    color:rgb(250, 250, 22);
+}
+
+.modal-window{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(88, 12, 88);
+    color:rgb(248, 248, 218);
+    border-radius: 30px;
+    gap: 40px;
+    max-width: 45%;
+    position: relative;
+    margin: 0 auto;
+
+    top: 200px;
+}
+
+.modal-window-text{
+    font-size: 32px;
+    font-weight: 300;
+}
+
+.modal-window-answer{
+    font-size: 30px;
+    font-weight: 300;
+}
+
+.play-again-btn {
+    background-color:rgb(248, 248, 218);
+    cursor: pointer;
+    color:rgb(88, 12, 88);
+    font-size: 25px;
+    border: 2px solid rgb(51, 9, 51);
+    border-radius: 10px;
+    width: 200px;
+    transition: all 0.3s ease-in-out;
+}
+
+.play-again-btn:hover{
+    background:rgb(163, 59, 163);
+    color:rgb(250, 250, 22);
+    
+    border: 2px solid rgb(51, 9, 51);
+}
+
+
+.modal-window-wrapper{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background: rgba(41, 41, 41, 0.6);
+    top: 0;
+    z-index: 0;
+    left: 0;
+}
+
+.modal-window-wrapper.hide{
+    display: none;
+}
+
+.letter.active{
+    border-bottom: 0px;
+}
+
+@media (max-width: 955px){
+    .hangman-overlay {
+        flex-direction: column;
+        gap: 50px;
+        margin: 20px;
+        padding: 0px;
+    }
+
+    .hangman-title{
+        display: flex;
+        order: 1;
+    }
+    .gallow-tamplate{
+        order: 2;
+    }
+
+}
+
+@media (max-width:500px){
+
+    .gallow-picture{
+        width: 200px;
+    }
+    .letter{
+        width: 25px;
+        height: 35px;
+        font-size: 25px;
+    }
+
+    .hint-text{
+        font-size: 18px;
+    }
+
+    .hangman-tamplate {
+        position: relative;
+        top: 85px;
+        right: 58px;
+        width: 100px;
+    }
+
+    .hangman-head{
+        width: 50px;
+        height: 50px;
+        border: 5px solid grey;
+    }
+
+    .hangman-body{
+        top: 0px;
+        left: 28px;
+        width: 5px;
+        height: 50px;
+    }
+
+    .hangman-left-arm{
+        top: -38px;
+        left: 25px;
+        width: 50px;
+        height: 5px;
+    }
+
+    .hangman-left-leg{
+        top: 5px;
+        left: 23px;
+        width: 50px;
+        height: 5px;
+    }
+
+    .hangman-right-arm{
+        top: -42px;
+        left: -16px;
+        width: 50px;
+        height: 5px;
+    }
+
+    .hangman-right-leg{
+        top: 0px;
+        left: -12px;
+        width: 50px;
+        height: 5px;
+    }
+
+    .modal-window{
+        max-width: 100%;
+    }
+
+    .modal-window-text{
+        font-size: 25px;
+    }
+    .modal-window-answer{
+        font-size: 22px;
+    }
+
+}
