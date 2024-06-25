@@ -1,0 +1,441 @@
+
+body{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    gap: 40px;
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    margin: 0;
+}
+
+
+.game-field {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+
+.game-horizontal-field{
+    display: flex;
+
+}
+
+.row-cords{
+    display: flex;
+    justify-content: end;
+
+}
+
+.nonograms-col-cords{
+    display: flex;
+    align-items: end;
+
+}
+
+.col-cords{
+    background: rgb(212, 211, 211);
+}
+
+.nonograms-row-cords{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+
+
+.block.cross::before{
+    content: "";
+    display: block;
+    width: 35px;
+    height: 3px;
+    background-color: black;
+    border-radius: 20%;
+    position: relative;
+    top: 16px;
+    left: 0px;
+    transform: rotate(45deg);
+}
+
+.block.cross::after{
+    content: "";
+    display: block;
+    width: 35px;
+    height: 3px;
+    background-color: black;
+    border-radius: 20%;
+    position: relative;
+    top: 13px;
+    left: 0px;
+    transform: rotate(-45deg);
+}
+.row-counts {
+    width: 34px;
+    height: 34px;
+    font-size: 19px;
+    background: white;
+    border: 1px solid black;
+    cursor: pointer;
+    text-align: center;
+    line-height: 34px;
+    background: rgb(212, 211, 211);
+}
+
+.col-counts{
+    width: 34px;
+    height: 34px;
+    font-size: 19px;
+    background: white;
+    border: 1px solid black;
+    cursor: pointer;
+    text-align: center;
+    line-height: 34px;
+    background: rgb(212, 211, 211);
+}
+
+.nonograms-blocks{
+    display: flex;
+    flex-direction: column;
+    max-width: fit-content;
+}
+
+.nonogram-row{
+    display: flex;
+    flex-direction: row;
+}
+
+
+.block{
+    width: 34px;
+    height: 34px;
+    font-size: 19px;
+background: white;
+border: 1px solid black;
+cursor: pointer;
+text-align: center;
+line-height: 34px;
+}
+
+
+
+.block.active{
+    background-color: black;
+    color: azure;
+}
+
+.corner-block{
+    width: 150px;
+    height: 150px;
+    
+}
+
+.vertical-field{
+    display: flex;
+}
+
+.control-panel{
+    display: flex;
+    flex-direction: column;
+    gap: 15px
+}
+
+.btn-block{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.control-btn {
+    display: block;
+    width: 160px;
+    height: 40px;
+    font-family: inherit;
+    font-size: 20px;
+    text-align: center;
+    color: #000;
+    outline: none;
+    border: 1px solid #000;
+    cursor: pointer;
+    border-radius: 2px;
+    background: linear-gradient(rgb(255,255,255), rgb(240,240,240));
+    box-shadow:
+     0 0 3px rgba(0,0,0,0) inset,
+     0 1px 1px 1px rgba(255,255,255,.2),
+     0 -1px 1px 1px rgba(0,0,0,0);
+    transition: .2s ease-in-out;
+  }
+  .control-btn:hover:not(:active) {
+    box-shadow:
+     0 0 3px rgba(0,0,0,0) inset,
+     0 1px 1px 1px  rgb(55, 19, 56)
+     0 -1px 1px 1px  rgb(55, 19, 56);
+  }
+  .control-btn:active {
+    background: linear-gradient(rgb(250,250,250), rgb(235,235,235));
+    box-shadow:
+     0 0 3px rgba(0,0,0,.5) inset,
+     0 1px 1px 1px rgba(255,255,255,.4),
+     0 -1px 1px 1px rgba(0,0,0,.1);
+  }
+
+  .game-info-block {
+    display: flex;
+    gap: 50px;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+   p{
+    margin: 0;
+   }
+
+   .modal-window{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+   }
+
+
+   .modal-window-wrapper.show {
+    position: fixed;
+    width: 100%;
+     height: 100%;
+     z-index: 2;
+     background: rgba(41, 41, 41, 0.6);
+     top: 0;
+     z-index: 1;
+     left:0;  
+  cursor: pointer;
+  }
+  .modal-window.show {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100%;
+    z-index:1;
+  
+  }
+  
+  .modal-window {
+    display: none;
+  }
+.change-field-block{
+    width: 300px;
+    padding: 30px;
+    display:flex;
+    gap: 20px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    border: 1px solid rgb(21, 19, 36);
+    border-radius: 8px;
+    text-align: center;
+    color: #58554B;
+}
+
+.close-btn {
+    position: relative;
+    left: 176px;
+    display: block;
+    width: 30px;
+    height: 30px;
+    font-family: inherit;
+    font-size: 20px;
+    text-align: center;
+    color: #000;
+    outline: none;
+    border: 1px solid #000;
+    cursor: pointer;
+    border-radius: 14px;
+    background: linear-gradient(rgb(255,255,255), rgb(240,240,240));
+    box-shadow:
+     0 0 3px rgba(0,0,0,0) inset,
+     0 1px 1px 1px rgba(255,255,255,.2),
+     0 -1px 1px 1px rgba(0,0,0,0);
+    transition: .2s ease-in-out;
+    padding: 0;
+  }
+  .close-btn:hover:not(:active) {
+    box-shadow:
+     0 0 3px rgba(0,0,0,0) inset,
+     0 1px 1px 1px  rgb(55, 19, 56)
+     0 -1px 1px 1px  rgb(55, 19, 56);
+  }
+  .close-btn:active {
+    background: linear-gradient(rgb(250,250,250), rgb(235,235,235));
+    box-shadow:
+     0 0 3px rgba(0,0,0,.5) inset,
+     0 1px 1px 1px rgba(255,255,255,.4),
+     0 -1px 1px 1px rgba(0,0,0,.1);
+  }
+
+  .music-togle-icon {
+    position: absolute;
+    top: 10px;
+    left: 50px;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    background-image: url(./assets/icons/volume-up-icon.png);
+    background-size: 30px 30px;
+    background-repeat: no-repeat;
+  }
+
+  .music-togle-icon.up{
+    background-image: url(./assets/icons/volume-down-icon.png);
+    background-size: 30px 30px;
+    background-repeat: no-repeat;
+  }
+
+  .theme-togle-icon{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    background-image: url(./assets/icons/sun-icon.png);
+    background-size: 30px 30px;
+    background-repeat: no-repeat;
+  }
+  .theme-togle-icon.up{
+    background-image: url(./assets/icons/moon-icon.png);
+    background-size: 30px 30px;
+    background-repeat: no-repeat;
+  }
+
+  .music-togle-icon.dark {
+    background-image: url(./assets/icons/volume-up-icon-white.png);
+    background-size: 30px 30px;
+    background-repeat: no-repeat;
+  }
+
+  .music-togle-icon.up.dark{
+    background-image: url(./assets/icons/volume-down-icon-white.png);
+    background-size: 30px 30px;
+    background-repeat: no-repeat;
+  }
+
+  body.dark {
+    background-color: #504c4c;
+  }
+
+  .title.dark{
+    color: #dbd8d1;
+  }
+
+  .game-info-block.dark{
+    color: #dbd8d1;
+  }
+
+  .block.dark {
+    background: #504c4c;
+    border: 1px solid #dbd8d1;
+  }
+
+  .block.active.dark{
+    background-color: #dbd8d1;
+  }
+
+  .row-counts.dark{
+    background: #7a7a7a;
+    border: 1px solid #dbd8d1;
+    color:#dbd8d1;
+  }
+
+  .col-counts.dark{
+    background: #7a7a7a;
+    border: 1px solid #dbd8d1;
+    color:#dbd8d1;
+  }
+
+  .block.cross.dark::after{
+    background-color: #dbd8d1;
+    }
+.block.cross.dark::before{
+    background-color: #dbd8d1;
+    }
+
+.control-btn.dark{
+    color:#dbd8d1;
+    border: 1px solid #dbd8d1;
+    background: linear-gradient(rgb(116, 110, 110), rgb(94, 87, 87));
+}
+
+
+.change-field-block.dark{
+    background: #7a7a7a;
+    color:#dbd8d1;
+}
+
+.close-btn.dark{
+    color:#dbd8d1;
+    border: 1px solid #dbd8d1;
+    background: linear-gradient(rgb(116, 110, 110), rgb(94, 87, 87));
+}
+
+.table-content{
+  width: 310px;
+  height: 40px;
+  text-align: center;
+  border: 2px solid #7a7a7a;
+  background-color: white;
+  border-radius: 10px;
+}
+
+td{
+  text-align: center;
+}
+
+.table-content.dark{
+  background: #7a7a7a;
+  border: 2px solid #dbd8d1;
+  color:#dbd8d1;
+}
+
+
+
+
+
+  @media (max-width: 850px) {
+    .block{
+        width: 20px;
+        height: 20px;
+        font-size: 10px;
+        line-height: 20px;
+    }
+    .col-counts{
+        width: 20px;
+        height: 20px;
+        font-size: 10px;
+        line-height: 20px;
+    }
+    .row-counts{
+        width: 20px;
+        height: 20px;
+        font-size: 10px;
+        line-height: 20px;
+    }
+
+    .block.cross::after{
+        width: 21px;
+        top: 6px;
+    }
+    .block.cross::before{
+        width: 21px;
+        top: 9px;
+    }
+  }
