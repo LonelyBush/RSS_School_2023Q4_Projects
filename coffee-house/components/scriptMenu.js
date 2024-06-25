@@ -1,4 +1,4 @@
-import * as getJson from "./products.json" with { type: "json" };
+import * as getJson from "../products.json" with { type: "json" };
 
 const collectionOfCoffee = getJson.default
 
