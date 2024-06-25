@@ -1,0 +1,53 @@
+[
+    {
+      "id": "0",
+      "word": "WORDS",
+      "hint": "We hurt without moving. We poison without touching. We bear the truth and the lies. We are not to be judged by our size."
+    },
+    {
+        "id": "1",
+        "word": "SECRET",
+        "hint": "If you have me, you want to share me. If you share me, you haven’t got me."
+      },
+      {
+        "id": "2",
+        "word": "STAMP",
+        "hint": "I can travel around the world while staying in a corner."
+      },
+      {
+        "id": "3",
+        "word": "KEYBOARD",
+        "hint": "I have keys but no locks. I have a space but no room. You can enter, but can’t go outside."
+      },
+      {
+        "id": "4",
+        "word": "CLOCK",
+        "hint": "Without fingers, I point, without arms, I strike, without feet, I run."
+      },
+      {
+        "id": "5",
+        "word": "DARKNESS",
+        "hint": "The more of this there is, the less you see."
+      },
+      {
+        "id": "6",
+        "word": "BANK",
+        "hint": "I have branches, but no fruit, trunk or leaves."
+      },
+      {
+        "id": "7",
+        "word": "BARBER",
+        "hint": "I shave every day, but my beard stays the same."
+      },
+      {
+        "id": "8",
+        "word": "COIN",
+        "hint": "I have a head and a tail, but I don’t have a body."
+      },
+      {
+        "id": "9",
+        "word": "NOTHING",
+        "hint": "Poor people have it. Rich people need it. If you eat it, you die."
+      }
+
+]
