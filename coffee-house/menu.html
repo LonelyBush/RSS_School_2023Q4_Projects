@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href = "./style.css"  rel= "stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="icon" href="./assets/icons/favicon.ico">
+    <title>Coffee Menu</title>
+</head>
+<body>
+    <header class = "">
+        <a href="./index.html">
+            <img src = "./assets/icons/logo.svg" alt = "lead-icon">
+        </a>
+        
+        <nav>
+            <ul class = "">
+                <li>
+                    <a href = "./index.html#favorite-coffee" class = "navigation-links">Favorite coffee</a>
+                </li>
+                <li>
+                    <a href = "./index.html#about-coffee" class = "navigation-links">About</a>
+                </li>
+                <li>
+                    <a href = "./index.html#mobile-app" class = "navigation-links">Mobile app</a>
+                </li>
+                <li>
+                    <a href = "./index.html#contact-us" class = "navigation-links">Contact us</a>
+                </li>
+                <div class = "menu-container active hide">
+                    <a class = "menu-links" href = "./menu.html">Menu</a>
+                    <img src = "./assets/icons/coffee-cup.svg" alt = "coffee-cup">
+                </div>
+            </ul>
+        </nav>
+        <div class = "menu-container active">
+            <a class = "navigation-links" href = "./menu.html" >Menu</a>
+            <img src = "./assets/icons/coffee-cup.svg" alt = "coffee-cup">
+        </div>
+        <div class ='borgar'>
+            <img src = "./assets/icons/vector_1.svg" class ='line1' alt = "line-pic">
+            <img  src = "./assets/icons/vector_1.svg" class ='line2' alt = "line-pic">
+        </div>
+    </header>
+    <main>
+        <div class = "coffee-cards-container">
+            <h1 class = "coffee-cards-heading">Behind each of our cups hides an <span>amazing surprise</span></h1>
+            <div class = "coffe-tabs">
+                <div class = "tabs-btn active">
+                    <div class = "coffee-icon active"></div>
+                    <p class = "icon-desc">Coffee</p>
+                </div>
+                <div class = "tabs-btn">
+                    <div class = "tea-icon"></div>
+                    <p class = "icon-desc">Tea</p>
+                </div>
+                <div class = "tabs-btn">
+                    <div class = "dessert-icon"></div>
+                    <p class = "icon-desc">Dessert</p>
+                </div>
+            </div>
+            <div class = "coffee-menu-content">
+
+            </div>
+
+             <button class = "refresh-btn">
+            </button>
+
+
+            <div class = "modal-block-wrapper hide">
+            <div class = "modal-coffee-container">
+                <div class="modal-coffee-picture" style="background-image: url(./assets/pictures/coffee-7.jpg);">
+
+                </div>
+                <div class = "modal-coffee-content">
+                    <div class="modal-coffee-desc">
+                        <h3 class="modal-card-heading">Irish coffee</h3>
+                        <p class="modal-card-text">Fragrant black coffee with Jameson Irish whiskey and whipped milk</p>
+                    </div>
+                   
+                    <div class = "modal-size-container">
+                        <p class ="modal-text-desc" >Size</p>
+                        <div class = "modal-size-btns">
+                            <div id = "S" class = "size-btn active">
+                                <p class = "size-lit">S</p>
+                                <p class = "size-desc">200 ml</p>
+                            </div>
+                            <div id = "M" class = "size-btn">
+                                <p class = "size-lit">M</p>
+                                <p class = "size-desc">300 ml</p>
+                            </div>
+                            <div id = "L" class = "size-btn">
+                                <p class = "size-lit">L</p>
+                                <p class = "size-desc">400 ml</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class = "modal-additiv-container">
+                        <p class ="modal-text-desc" >Additives</p>
+                        <div class = "modal-additiv-btns">
+                            <div class = "additiv-btn">
+                                <p class = "size-lit">1</p>
+                                <p class = "type-additiv">Sugar</p>
+                            </div>
+                            <div class = "additiv-btn">
+                                <p class = "size-lit">2</p>
+                                <p class = "type-additiv">Сinnamon</p>
+                            </div>
+                            <div class = "additiv-btn">
+                                <p class = "size-lit">3</p>
+                                <p class = "type-additiv">Syrup</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+
+                    <div class="modal-total-price">
+                        <p class = "total-heading">Total:</p>
+                        <p class = "total-price">$6.00</p>
+                    </div>
+
+                    <div class = "modal-info-block">
+                        <img class ="info-img" src = "./assets/icons/info-empty.svg" alt = "info-icon">
+                        <p class = "modal-info-text">The cost is not final. Download our mobile app to see the final price and place your order. Earn loyalty points and enjoy your favorite coffee with up to 20% discount.</p>
+                    </div>
+
+                    <button class = "modal-close-btn">Close</button>
+
+                </div>
+            </div>
+            </div>
+        </div>
+    </main>
+
+    <footer id = "contact-us">
+        <div class = "footer-content">
+            <div class = "sip-favor-container">
+                <h2 class = "footer-heading">Sip, Savor, Smile. <span>It’s coffee time!</span></h2>
+                <div class ="social-buttons-container">
+                    <a href ="https://twitter.com/" target="_blank"><div class = "twitter-btn"></div></a>
+                    <a href = "https://www.instagram.com/" target="_blank"><div class = "instagram-btn"></div></a>
+                    <a href = "https://www.facebook.com/" target="_blank"><div class = "facebook-btn"></div></a>
+                </div>
+            </div>
+            <div class = "contact-content">
+                <h3 class = "contact-heading">Contact us</h3>
+                <div class = "contacts-block">
+                    <div class = "contact-adress-tab">
+                        <a target="_blank" href="https://www.google.com/maps/search/8558+Green+Rd,+%D0%A4%D0%B5%D0%BD%D1%82%D0%BE%D0%BD,+%D0%9C%D0%B8%D1%87%D0%B8%D0%B3%D0%B0%D0%BD,+%D0%A1%D0%A8%D0%90/@42.7989491,-83.738731,14z/data=!3m1!4b1?entry=ttu" class = "contact-links">
+                        <img src = "./assets/icons/pin-alt.svg" alt ="pin-pic">
+                        <p class = "contact-adress">8558 Green Rd.,   LA</p>
+                         </a>
+                    </div>
+                    <div class = "contact-tel-tab">
+                        <a href = "tel:+1603555-0123" class = "contact-links">
+                        <img src = "./assets/icons/phone.svg" alt ="tel-pic">
+                        <p class = "contact-tel">+1 (603) 555-0123</p>
+                        </a>
+                    </div>
+                    <div class = "contact-time-tab">
+                        <img src = "./assets/icons/clock.svg" alt ="tel-pic">
+                        <p class = "contact-time">Mon-Sat: 9:00 AM – 23:00 PM</p>
+                    </div>  
+                    
+                </div>
+            </div>
+            <div>
+
+            </div>
+        </div>
+    </footer>
+    
+    <script type="module" src = "./components/scriptMenu.js"></script>
+</body>
+</html>

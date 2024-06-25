@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href = "./style.css"  rel= "stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="icon" href="./assets/icons/favicon.ico">
+    <title>Coffee-House</title>
+</head>
+<body>
+
+    <header class = "">
+        <img src = "./assets/icons/logo.svg" alt = "lead-icon">
+        <nav>
+            <ul class = "">
+                <li>
+                    <a href = "#favorite-coffee" class = "navigation-links">Favorite coffee</a>
+                </li>
+                <li>
+                    <a href = "#about-coffee" class = "navigation-links">About</a>
+                </li>
+                <li>
+                    <a href = "#mobile-app" class = "navigation-links">Mobile app</a>
+                </li>
+                <li>
+                    <a href = "#contact-us" class = "navigation-links">Contact us</a>
+                </li>
+                <div class = "menu-container hide">
+                    <a class = "menu-links" href = "./menu.html">Menu</a>
+                    <img src = "./assets/icons/coffee-cup.svg" alt = "coffee-cup">
+                </div>
+            </ul>
+        </nav>
+        <div class = "menu-container">
+            <a class = "navigation-links" href = "./menu.html">Menu</a>
+            <img src = "./assets/icons/coffee-cup.svg" alt = "coffee-cup">
+        </div>
+        <div class ='borgar'>
+            <img src = "./assets/icons/vector_1.svg" class ='line1' alt = "line-pic">
+            <img  src = "./assets/icons/vector_1.svg" class ='line2' alt = "line-pic">
+        </div>
+    </header>
+    <main>
+        <div class = "hero-container">
+            <video autoplay muted loop class="hero-video">
+                <source src="./assets/video/hero-video.mp4" type="video/mp4">
+              </video>
+              <div class = "hero-content">
+                <h1><span>Enjoy</span> premium coffee at our charming cafe</h1>
+                <p class = "hero-text-block">With its inviting atmosphere and delicious coffee options, the Coffee House Resource is a popular destination for coffee lovers and those seeking a warm and inviting space to enjoy their favorite beverage.</p>
+                <form action = "./menu.html"><button  class = "hero-button">Menu</button></form>
+            </div>
+        </div>
+
+        <div id = "favorite-coffee" class = "favorites-container">
+            <h2 class ="favorite-heading">Choose your <span>favorite</span> coffee</h2>
+            <div class = "coffee-cards">
+                <div class = "left-arrow">
+                    <button class = "left-arrow-button"> </button>
+                </div>
+                <div class = "coffee-cards-wraper">
+                    <div class = "coffee-cards-slider">
+                    <div class = "coffee-element">
+                        <img src = "assets/pictures/coffee-slider-1.png" alt ="espresso-pick">
+                        <div class = "coffee-element-content">
+                            <h3 class = "coffee-element-heading">S’mores Frappuccino</h3>
+                            <p class = "coffee-element-desc">This new drink takes an espresso and mixes it with brown sugar and cinnamon before being topped with oat milk.</p>
+                            <p class = "coffee-element-price">$5.50</p>
+                        </div>
+                    </div>
+
+                    <div class = "coffee-element">
+                        <img src = "assets/pictures/coffee-slider-2.png" alt ="caramel-pick">
+                        <div class = "coffee-element-content">
+                            <h3 class = "coffee-element-heading">Caramel Macchiato</h3>
+                            <p class = "coffee-element-desc">Fragrant and unique classic espresso with rich caramel-peanut syrup, with cream under whipped thick foam.</p>
+                            <p class = "coffee-element-price">$5.00</p>
+                        </div>
+                    </div>
+
+                    <div class = "coffee-element">
+                        <img src = "assets/pictures/coffee-slider-3.png" alt ="ice-pick">
+                        <div class = "coffee-element-content">
+                            <h3 class = "coffee-element-heading">Ice coffee</h3>
+                            <p class = "coffee-element-desc">A popular summer drink that tones and invigorates. Prepared from coffee, milk and ice.</p>
+                            <p class = "coffee-element-price">$4.50</p>
+                        </div>
+                    </div>
+
+                    </div>
+                </div>
+
+                <div class = "right-arrow">
+                    <button class = "right-arrow-button"> </button>
+                </div>
+            </div>
+            <div class = "coffee-navigation">
+                <div class = "control-btn">
+                    <div class = "progress"></div>
+                </div>
+                <div class = "control-btn">
+                    <div class = "progress"></div>
+                </div>
+                <div class = "control-btn">
+                    <div class = "progress"></div>
+                </div>
+            </div>
+        </div>
+        <div id = "about-coffee" class = "about-container">
+            <h2 class = "about-heading">Resource is <span>the perfect and cozy place</span> where you can enjoy a variety of hot beverages, relax, catch up with friends, or get some work done.</h2>
+            <div class = "pictures-container">
+                <div class = "pictures-colum">
+                    <div class = "girl-pic"></div>
+                    <div class = "coffee-pic"></div>
+                </div>
+                <div class = "pictures-colum">
+                    <div class = "man-pic"></div>
+                    <div class = "couple-pic"></div>
+                </div>
+             
+            </div>
+        </div>
+
+        <div id = "mobile-app" class = "mobile-app-container">
+            <div class = "mobile-app-content">
+                <h2 class = "mobile-app-heading"><span>Download</span> our apps to start ordering</h2>
+                <p class = "mobule-app-text">Download the Resource app today and experience the comfort of ordering your favorite coffee from wherever you are</p>
+                <div class = "mobile-app-button-container">
+                    <div class = "apple-store-btn">
+                        <div class = "btn-desc">
+                            <p class = "btn-small-text">Available on the</p>
+                            <p class = "btn-big-text">App Store</p>
+                        </div>
+                    </div>
+                    <div class = "google-play-btn">
+                        <div class = "btn-desc">
+                            <p class = "btn-small-text">Available on</p>
+                            <p class = "btn-big-text">Google Play</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <img class = "mobile-screens-pic" src = "./assets/pictures/mobile-phones_1.png" alt = "smartphone_pick_1">
+        </div>
+    </main>
+    <footer id = "contact-us">
+        <div class = "footer-content">
+            <div class = "sip-favor-container">
+                <h2 class = "footer-heading">Sip, Savor, Smile. <span>It’s coffee time!</span></h2>
+                <div class ="social-buttons-container">
+                    <a href ="https://twitter.com/" target="_blank"><div class = "twitter-btn"></div></a>
+                    <a href = "https://www.instagram.com/" target="_blank"><div class = "instagram-btn"></div></a>
+                    <a href = "https://www.facebook.com/" target="_blank"><div class = "facebook-btn"></div></a>
+                </div>
+            </div>
+            <div class = "contact-content">
+                <h3 class = "contact-heading">Contact us</h3>
+                <div class = "contacts-block">
+                    <div class = "contact-adress-tab">
+                        <a target="_blank" href="https://www.google.com/maps/search/8558+Green+Rd,+%D0%A4%D0%B5%D0%BD%D1%82%D0%BE%D0%BD,+%D0%9C%D0%B8%D1%87%D0%B8%D0%B3%D0%B0%D0%BD,+%D0%A1%D0%A8%D0%90/@42.7989491,-83.738731,14z/data=!3m1!4b1?entry=ttu" class = "contact-links">
+                        <img src = "./assets/icons/pin-alt.svg" alt ="pin-pic">
+                        <p class = "contact-adress">8558 Green Rd.,   LA</p>
+                         </a>
+                    </div>
+                    <div class = "contact-tel-tab">
+                        <a href = "tel:+1603555-0123" class = "contact-links">
+                        <img src = "./assets/icons/phone.svg" alt ="tel-pic">
+                        <p class = "contact-tel">+1 (603) 555-0123</p>
+                        </a>
+                    </div>
+                    <div class = "contact-time-tab">
+                        <img src = "./assets/icons/clock.svg" alt ="tel-pic">
+                        <p class = "contact-time">Mon-Sat: 9:00 AM – 23:00 PM</p>
+                    </div>  
+                    
+                </div>
+            </div>
+            <div>
+
+            </div>
+        </div>
+    </footer>
+
+    <script src = "./components/script.js"></script>
+</body>
+</html>
