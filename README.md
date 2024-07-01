@@ -35,3 +35,18 @@ Design and overall functionality is my own implementation
 **Used technologies:** HTML, CSS, JavaScript
 
 **Deploy**: https://lonelybush.github.io/RSS_School_2023Q4_Projects/nonograms-task/
+
+## Stage #2
+
+### 1. Async-Race
+
+The main task is to manage a collection of cars, control their engines and display racing statistics in a fun interactive SPA. Develop and gain skill with REST-API and implement CRUD operations for cars using the provided server mock.
+
+To run this SPA you need to start this [server-repo](https://github.com/mikhama/async-race-api)
+
+Design and overall functionality is my own implementation
+
+**Used technologies:** HTML, CSS, TypeScript
+
+**Deploy**: https://lonelybush.github.io/RSS_School_2023Q4_Projects/async-race/
+
