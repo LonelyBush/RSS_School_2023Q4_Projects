@@ -42,11 +42,29 @@ Design and overall functionality is my own implementation
 
 The main task is to manage a collection of cars, control their engines and display racing statistics in a fun interactive SPA. Develop and gain skill with REST-API and implement CRUD operations for cars using the provided server mock.
 
-To run this SPA you need to start this [server-repo](https://github.com/mikhama/async-race-api)
+To run this SPA you need to start localy this [server-repo](https://github.com/mikhama/async-race-api)
 
 Design and overall functionality is my own implementation
 
 **Used technologies:** HTML, CSS, TypeScript
 
 **Deploy**: https://lonelybush.github.io/RSS_School_2023Q4_Projects/async-race/
+
+### 2. Fun-Chat
+
+This task is implementation of the chat single page web application using ready-made server-mock.
+
+To run this SPA you need to start localy this [server-repo](https://github.com/rolling-scopes-school/fun-chat-server/tree/main)
+
+The main objectivities of this task was: 
+- Familiarize yourself with the WebSocket connection protocol.
+- Gain experience working with a connection where both the client and server applications can initiate sending messages.
+- Refine and solidify your skills in asynchronous coding.
+- Enhance and consolidate your skills in working with the Document Object Model (DOM) and creating markup using code.
+
+Design and overall functionality is my own implementation
+
+**Used technologies:** HTML, CSS, TypeScript
+
+**Deploy**: https://lonelybush.netlify.app/
 
