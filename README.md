@@ -11,7 +11,7 @@ The main objectivities of this task was:
 
 Design and overall functionality is my own implementation
 
-**Used technologies:** HTML, CSS, TypeScript
+**Used technologies:** HTML, CSS, TypeScript, JS, WebPack
 
 **Instruction for starting project localy**
 - Set up [server](https://github.com/rolling-scopes-school/fun-chat-server/tree/main) localy on your computer
