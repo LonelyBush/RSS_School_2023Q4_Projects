@@ -11,5 +11,5 @@ Design and overall functionality is my own implementation
 **Instruction for starting project localy**
 - Set up [server](https://github.com/mikhama/async-race-api) localy on your computer
 - cd async-race
-- npm instal
+- npm install
 - npm run start
